@@ -108,26 +108,3 @@
 .steps {
     margin-bottom: 290px;
 }
-
-.submit-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .submit-button.loading {
-            background-image: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 20px;
-            padding-left: 50px; /* Adjust according to the width of the loading animation */
-        }
-
-        .submit-button.green {
-            background-color: #28a745;
-        }
