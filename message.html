@@ -26,10 +26,30 @@
                 <label for="counter-input" class="label">Characters: <span id="counter-display">0</span></label>
             </div>
             <div class="button-container">
-                <button class="back-button">Back</button>
-                <button class="next-button">Next Step</button>
+                <button id="backBtn" class="back-button">Back</button>
+                <button id="nextBtn" class="next-button">Next Step</button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const goToPageButton = document.getElementById('nextBtn');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                window.location.href = 'rateUs.html';
+            });
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const goToPageButton = document.getElementById('backBtn');
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        }
+    });
+</script>
