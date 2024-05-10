@@ -126,8 +126,8 @@
               </div>
             <div class="button-container">
                 <button id="backBtn" class="back-button">Back</button>
-                <button class="submit-button">Submit</button>
-            </div>
+                <button id="submitButton" class="submit-button" onclick="submitForm()">Submit</button>
+              </div>
         </div>
     </div>
 </body>
@@ -142,4 +142,10 @@
             });
         }
     });
+
+    function submitForm() {
+      var button = document.querySelector('.submit-button');
+      button.textContent = "Submitted!";
+      button.classList.add('green');
+    }
 </script>
