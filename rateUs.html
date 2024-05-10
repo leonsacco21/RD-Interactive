@@ -125,10 +125,21 @@
                 </div>
               </div>
             <div class="button-container">
-                <button class="back-button">Back</button>
+                <button id="backBtn" class="back-button">Back</button>
                 <button class="submit-button">Submit</button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const goToPageButton = document.getElementById('backBtn');
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                window.location.href = 'message.html';
+            });
+        }
+    });
+</script>
