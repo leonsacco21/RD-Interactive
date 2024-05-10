@@ -77,11 +77,13 @@ body, html {
     color: #DCDCDC;
     font-size: 16px;
     cursor: pointer;
+    transition: transform 0.3s;
 }
 
+.back-button:hover,
 .submit-button:hover,
-.next-button:hover{
-    background-color: rgb(51, 51, 51);
+.next-button:hover {
+    transform: scale(1.05);
 }
 
 .next-button,
