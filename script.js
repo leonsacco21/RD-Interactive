@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-//Page Transition
+// Page Transition
 function transitionToPage(pageUrl) {
     // Fade out effect
     document.body.classList.add('fade-out');
@@ -112,12 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
         nextStepButton.addEventListener('click', () => {
             // Determine the target page URL based on the current page
             const currentPageUrl = window.location.pathname;
+            console.log("Current Page URL:", currentPageUrl); // Check the current URL
             let targetPageUrl = '';
             if (currentPageUrl.includes('index.html')) {
                 targetPageUrl = 'message.html';
             } else if (currentPageUrl.includes('message.html')) {
                 targetPageUrl = 'rateUs.html';
             }
+            console.log("Target Page URL:", targetPageUrl); // Check the target URL
             
             // Perform the page transition with fade effect
             transitionToPage(targetPageUrl);
@@ -129,12 +131,14 @@ document.addEventListener('DOMContentLoaded', () => {
         backButton.addEventListener('click', () => {
             // Determine the target page URL based on the current page
             const currentPageUrl = window.location.pathname;
+            console.log("Current Page URL:", currentPageUrl); // Check the current URL
             let targetPageUrl = '';
             if (currentPageUrl.includes('message.html')) {
                 targetPageUrl = 'index.html';
             } else if (currentPageUrl.includes('rateUs.html')) {
                 targetPageUrl = 'message.html';
             }
+            console.log("Target Page URL:", targetPageUrl); // Check the target URL
             
             // Perform the page transition with fade effect
             transitionToPage(targetPageUrl);
