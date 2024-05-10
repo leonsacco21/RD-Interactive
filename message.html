@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/message.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="card">
+        <img src="src/cardImg.jpg" alt="Image" class="card-image">
+        <div class="right-side">
+            <div class="steps">
+                <div class="square">1</div>
+                <div class="step">Sign Up</div>
+                <div id="selected-square" class="square">2</div>
+                <div id="selected" class="step">Message</div>
+                <div class="square">3</div>
+                <div class="step">Rate Us</div>
+            </div>
+            <div class="card-body">
+                <label for="message" class="message-label">Message</label>
+                <textarea id="message" class="message-box"></textarea>
+                <label for="counter-input" class="label">Characters: <span id="counter-display">0</span></label>
+            </div>
+            <div class="button-container">
+                <button class="back-button">Back</button>
+                <button class="next-button">Next Step</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.message-box{
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    resize: none;
+}
+
+.card-body{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+/*Styling for Character Counter*/
+#counter-display {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    line-height: 17px;
+}

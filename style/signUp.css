@@ -1,0 +1,163 @@
+.next-button {
+    border: 2px solid #000000;
+    background-color: #000000;
+    margin-left: 555px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.input-group input[type="date"] {
+    width: 185px;
+}
+
+.inputs {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.steps {
+    padding-right: 40px;
+}
+
+/*Styling for Password Components*/
+
+.bg-transparent {
+	background-color: transparent !important;
+}
+
+.bg-red {
+	background-color: #e74c3c !important;
+}
+
+.bg-orange {
+	background-color: #e67e22 !important;
+}
+
+.bg-green {
+	background-color: #2ecc71 !important;
+}
+
+.font-size {
+	font-size: calc(var(--sizeValue) * 10px);
+	font-size: var(--sizeValue)rem;
+}
+
+.password-wrapper {
+	position: absolute;
+	border-radius: 5px;
+    left: 22.5px;
+}
+
+.password-wrapper .icon-wrapper {
+	width: 35px;
+	height: 35px;
+    border-radius: 0px 5px 5px 0px;
+	background-color: black;
+	cursor: pointer;
+}
+
+.eye-svg{
+    width: 75%;
+    height: 75%;
+    padding-left: 12.5%;
+    padding-top: 12.5%;
+}
+
+.password-wrapper .icon-wrapper .ion-eye,
+.password-wrapper .icon-wrapper .ion-more {
+	position: absolute;
+	top: 11px;
+	right: 12px;
+	color: #ccc;
+	transition: color 0.25s ease-out;
+	font-size: calc(2.6 * 10px);
+	font-size: 2.6rem;
+}
+
+.password-wrapper .icon-wrapper .ion-more {
+	right: 14px;
+}
+
+.password-wrapper .icon-wrapper:hover .ion-eye,
+.password-wrapper .icon-wrapper:hover .ion-more {
+	color: #3498db;
+	transition: color 0.25s ease-in;
+}
+
+.password-wrapper .strength-lines {
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+    right: 0;
+    width: calc(100% - 50px);
+    height: 6px;
+    z-index: 3;
+}
+
+.password-wrapper .strength-lines .line {
+	position: absolute;
+	background-color: transparent;
+	height: 6px;
+	border-radius: 2px;
+	transition: background-color 0.25s ease-in;
+}
+
+.password-wrapper .strength-lines .line:not(:first-of-type):not(:last-of-type) {
+	left: 33%;
+	right: 33%;
+}
+
+.password-wrapper .strength-lines .line:first-of-type {
+	left: 4px;
+	right: 68%;
+}
+
+.password-wrapper .strength-lines .line:last-of-type {
+	left: 68%;
+	right: 4px;
+}
+
+.input-group.password-wrapper {
+    position: relative;
+}
+
+.input-group.password-wrapper .input {
+    width: 185px;
+}
+
+.input-group.password-wrapper .icon-wrapper {
+    position: absolute;
+    top: 71.5%;
+    right: 1.5px;
+    transform: translateY(-50%);
+}
