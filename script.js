@@ -118,6 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 targetPageUrl = 'message.html';
             } else if (currentPageUrl.includes('message.html')) {
                 targetPageUrl = 'rateUs.html';
+            } else {
+                console.log("Current page not recognized:", currentPageUrl);
             }
             console.log("Target Page URL:", targetPageUrl); // Check the target URL
             
@@ -137,6 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 targetPageUrl = 'index.html';
             } else if (currentPageUrl.includes('rateUs.html')) {
                 targetPageUrl = 'message.html';
+            } else {
+                console.log("Current page not recognized:", currentPageUrl);
             }
             console.log("Target Page URL:", targetPageUrl); // Check the target URL
             
