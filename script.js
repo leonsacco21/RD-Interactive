@@ -105,6 +105,7 @@ function transitionToPage(pageUrl) {
     }, 200); // Adjust the delay to match the duration of the fade out animation
 }
 
+/*
 // Event listener for Next Step button clicks
 document.addEventListener('DOMContentLoaded', () => {
     const nextStepButton = document.querySelector('.next-button');
@@ -148,4 +149,4 @@ document.addEventListener('DOMContentLoaded', () => {
             transitionToPage(targetPageUrl);
         });
     }
-});
+});*/
