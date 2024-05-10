@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Determine the target page URL based on the current page
             const currentPageUrl = window.location.pathname;
             let targetPageUrl = '';
-            if (currentPageUrl.includes('signUp.html')) {
+            if (currentPageUrl.includes('index.html')) {
                 targetPageUrl = 'message.html';
             } else if (currentPageUrl.includes('message.html')) {
                 targetPageUrl = 'rateUs.html';
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const currentPageUrl = window.location.pathname;
             let targetPageUrl = '';
             if (currentPageUrl.includes('message.html')) {
-                targetPageUrl = 'signUp.html';
+                targetPageUrl = 'index.html';
             } else if (currentPageUrl.includes('rateUs.html')) {
                 targetPageUrl = 'message.html';
             }
