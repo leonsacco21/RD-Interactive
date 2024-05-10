@@ -50,9 +50,20 @@
                 </div>
             </div>            
             <div class="button-container">
-                <button class="next-button">Next Step</button>
+                <button id="nextBtn" class="next-button">Next Step</button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const goToPageButton = document.getElementById('nextBtn');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                window.location.href = 'message.html';
+            });
+        }
+    });
+</script>
