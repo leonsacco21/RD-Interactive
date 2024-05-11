@@ -31,13 +31,14 @@ body, html {
     margin-right: 15px;
     font-weight: bold;
     font-size: 25px;
+    color: #DCDCDC;
 }
 
 .square {
     width: 55px;
     height: 40px;
     border-radius: 10px;
-    background-color: #000000;
+    background-color: #DCDCDC;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -48,11 +49,11 @@ body, html {
 }
 
 #selected-square{
-    background-color: #DCDCDC;
+    background-color: #000000;
 }
 
 #selected{
-    color: #DCDCDC;
+    color: #000000;
 }
 
 .card-image {
